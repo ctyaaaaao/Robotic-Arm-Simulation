@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'tm_arm_keyboard = tm_robot_control.tm_arm_keyboard:main',
             'gripper_keyboard = tm_robot_control.gripper_keyboard:main',            
+            'tm_arm_cartesian = tm_robot_control.tm_arm_cartesian:main',
         ],
     },
 )

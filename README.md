@@ -11,6 +11,7 @@ Make sure your URDF path and files are correctly set in the following location:
 To build the necessary packages, use the following command:
 ```bash
 colcon build --packages-select tm_robot_control tm_robot_simulation
+source ~/tmdriver_ws/install/setup.bash
 ```
 
 ## Launching the Simulation and Driver
@@ -28,6 +29,10 @@ ros2 launch tm_robot_simulation tm_robot_simulation.launch.py
 To control the robotic arm using the keyboard, run:
 ```bash
 ros2 run tm_robot_control tm_arm_keyboard
+```
+or
+```bash
+ros2 run tm_robot_control tm_arm_cartesian
 ```
 
 ## Verifying Nodes and Topics
