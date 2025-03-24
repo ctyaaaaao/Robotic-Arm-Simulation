@@ -23,9 +23,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'tm_arm_simulator = tm_robot_simulation.tm_arm_simulator:main',
+            'tm_arm_action_simulation = tm_robot_simulation.tm_arm_action_simulation:main',
             'tm_arm_loader = tm_robot_simulation.tm_arm_loader:main',
             'gripper_simulator = tm_robot_simulation.gripper_simulator:main',
+
         ],
     },
 )

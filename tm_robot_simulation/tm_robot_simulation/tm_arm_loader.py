@@ -8,9 +8,11 @@ def main():
     p.setAdditionalSearchPath(pybullet_data.getDataPath())
     p.setGravity(0, 0, -9.8)
 
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    urdf_path = os.path.join(script_dir, "../../tm_description/urdf/tm12_with_gripper.urdf")
-    urdf_path = os.path.normpath(urdf_path)
+    # script_dir = os.path.dirname(os.path.realpath(__file__))
+    # urdf_path = os.path.join(script_dir, "../../../tm_description/urdf/tm12_with_gripper.urdf")
+    # urdf_path = os.path.normpath(urdf_path)
+    urdf_path = os.path.expanduser("/home/regina/Hardware/src/tm2_ros2/tm_description/urdf/tm12_with_gripper.urdf")
+
 
     robot_id = p.loadURDF(urdf_path, useFixedBase=True, flags=p.URDF_USE_SELF_COLLISION)
 
